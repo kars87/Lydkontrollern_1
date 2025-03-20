@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "lkApp.apps.LkappConfig"
+    "lkApp"
 ]
 
 MIDDLEWARE = [
@@ -51,7 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'lydkontroll.urls'
-
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
